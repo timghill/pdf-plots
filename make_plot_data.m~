@@ -16,8 +16,11 @@ xlabel('Time (s)')
 ylabel('Channel mass flux (m^3/s)')
 
 % Using the Latex interpreter changes the font style
-text(2, 1.1, 'Channel mass flux (m$^3$/s)', 'Interpreter', 'LaTeX')
+text(2, 1.1, '\sffamily Channel mass flux (m$^3$/s)', 'Interpreter', 'LaTeX')
+
+text(2, 0.9, '\sffamily \mdseries Channel mass flux (m$$^3$$/s)', 'Interpreter', 'LaTeX', 'FontSize', 16)
+
+% text(2, 1, '$\mathsf{This is sans}$', 'Interpreter', 'latex')
+text(2, 1, '\sffamily\upshape\mdseries WALT$^2$ bla fi f{}i ff', 'Interpreter', 'LaTeX')
 
 savefig('pdf_plots_data.fig')
-
-print('test', '-dpdf', '-opengl', '-r864')
