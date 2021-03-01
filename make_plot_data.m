@@ -15,7 +15,7 @@ xlabel('Time (s)')
 % whitespace on Linux
 ylabel('Channel mass flux (m^3/s)')
 
-% But the same string as horizontal text prints OK
-text(2, 1.1, 'Channel mass flux (m^3/s)')
+% Using the Latex interpreter changes the font style
+text(2, 1.1, 'Channel mass flux (m$^3$/s)', 'Interpreter', 'latex')
 
 savefig('pdf_plots_data.fig')
